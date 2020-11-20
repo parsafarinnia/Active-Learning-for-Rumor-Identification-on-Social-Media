@@ -161,7 +161,7 @@ if __name__ == "__main__":
     Charliehebdo="/Users/macbook/Desktop/reasearch/tweets_data_set_2018/all-rnr-annotated-threads/charliehebdo-all-rnr-threads/"
     Ebola_Essien="/Users/macbook/Desktop/reasearch/tweets_data_set_2018/all-rnr-annotated-threads/ebola-essien-all-rnr-threads"
     Ferguson="/Users/macbook/Desktop/reasearch/tweets_data_set_2018/all-rnr-annotated-threads/ferguson-all-rnr-threads"
-    Germanwings_crash=" /Users/macbook/Desktop/reasearch/tweets_data_set_2018/all-rnr-annotated-threads/germanwings-crash-all-rnr-threads"
+    Germanwings_crash="/Users/macbook/Desktop/reasearch/tweets_data_set_2018/all-rnr-annotated-threads/germanwings-crash-all-rnr-threads"
     Gurlitt="/Users/macbook/Desktop/reasearch/tweets_data_set_2018/all-rnr-annotated-threads/gurlitt-all-rnr-threads"
     Ottawashooting="/Users/macbook/Desktop/reasearch/tweets_data_set_2018/all-rnr-annotated-threads/ottawashooting-all-rnr-threads"
     Prince_Toronto="/Users/macbook/Desktop/reasearch/tweets_data_set_2018/all-rnr-annotated-threads/prince-toronto-all-rnr-threads"
@@ -170,6 +170,7 @@ if __name__ == "__main__":
     topic_addresses=[Charliehebdo,Ebola_Essien,Ferguson,Germanwings_crash,Gurlitt,Ottawashooting,Prince_Toronto,Putin_missing,Sydneysiege]
     all_topics={}
     for i in range(len(topic_addresses)):
+        print(i)
         id_text_class, name = single_topic(topic_addresses[i])
         all_topics[i]=id_text_class
         make_panda_df(id_text_class,name+".json")
