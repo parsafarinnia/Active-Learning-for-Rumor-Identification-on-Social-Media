@@ -1,4 +1,5 @@
-# Active Learning for Rumor Identification on Social Media EMNLP2021
+# Active Learning for Rumor Identification on Social Media 
+EMNLP2021
 [Paper](https://aclanthology.org/2021.findings-emnlp.387/)
 
 Authors: Parsa Farinneya, Mohammad Mahdi Abdollah Pour, Sardar Hamidian and Mona Diab 
@@ -27,7 +28,8 @@ format:
 
 `Embedding_Name-Model_Name-Strategy_Name-Topic_Number-metrix.np` 
 
-such as BERT-svm-lc-8-f1.np. 
+such as BERT-svm-lc-8-f1.np that contains the metrics at each iteration.
+
 ## Visualizing Results
 Save all .np results in a folder name "results" then open "ATL_Visualization_and_Table_Creation.ipynb" and run the cells for tables and plots.
 
